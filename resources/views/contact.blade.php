@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Contact page</title>
 </head>
 <body>
-    <h1>Welcome from the Main page.</h1>
+    <h1>Welcome from the Contact page.</h1>
 </body>
 </html>
