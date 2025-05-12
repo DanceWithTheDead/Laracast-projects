@@ -10,13 +10,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/jobs', function ()  {
+Route::get('/jobs', function ()  { // Возвращает страницу со всеми вакансиями
     return view('jobs', [
         'jobs' => Job::all()
     ]);
 });
 
-Route::get('/jobs/{id}', function ($id)  {
+Route::get('/jobs/{id}', function ($id)  { // Возвращает страницу с вакансией которая соответствует $id
     $job = Job::find($id);
 
     return view('job', ['job'=> $job]);
