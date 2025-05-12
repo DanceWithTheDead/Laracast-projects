@@ -12,4 +12,8 @@ class Job extends Model
 
     protected $fillable = ['title', 'salary']; //Поля которые можно заполнять.
 
+    public function employer()
+    {
+       return $this->belongsTo(Employer::class);
+    }
 }

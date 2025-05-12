@@ -11,4 +11,9 @@ class Employer extends Model
     use HasFactory;
 
     protected $fillable = ['name'];
+
+    public function jobs()
+    {
+        return $this->hasMany(Job::class);
+    }
 }
