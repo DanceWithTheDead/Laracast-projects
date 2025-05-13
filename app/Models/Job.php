@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
-    protected $table = 'job_listings'; //Привязка к таблице по названию,т.к у модели и таблицы разные имена.
+    protected $table = 'job_listings';
 
-    protected $fillable = ['title', 'salary']; //Поля которые можно заполнять.
+    protected $guarded = [];
 
     public function employer()
     {
