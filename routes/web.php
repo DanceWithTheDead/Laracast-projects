@@ -11,7 +11,7 @@ Route::get('/', function () {
 });
 
 Route::get('/jobs', function ()  { // Возвращает страницу со всеми вакансиями
-    $jobs = Job::with('employer')->get();
+    $jobs = Job::with('employer')->simplePaginate(5);
     return view('jobs', [
         'jobs' => $jobs
     ]);
